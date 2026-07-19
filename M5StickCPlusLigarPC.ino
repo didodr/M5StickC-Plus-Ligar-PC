@@ -11,8 +11,8 @@
 #define FIRMWARE_VERSION "1.0.0"
 // #define BUILD_DATE __DATE__ " " __TIME__
 
-const char* ssid = "WIFI";
-const char* password = "SENHA-WIFI";
+const char* ssid = "SeuWiFi";
+const char* password = "SuaSenha";
 const char* pc_mac = "AA:BB:CC:DD:EE:FF";
 const char* pc_ip = "192.168.1.101";
 
