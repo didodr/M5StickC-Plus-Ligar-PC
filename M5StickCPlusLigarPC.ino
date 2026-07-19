@@ -11,10 +11,10 @@
 #define FIRMWARE_VERSION "1.0.0"
 // #define BUILD_DATE __DATE__ " " __TIME__
 
-const char* ssid = "Dido";
-const char* password = "dido@183914";
-const char* pc_mac = "00:E0:4C:68:17:7C";
-const char* pc_ip = "192.168.1.200";
+const char* ssid = "WIFI";
+const char* password = "SENHA-WIFI";
+const char* pc_mac = "AA:BB:CC:DD:EE:FF";
+const char* pc_ip = "192.168.1.101";
 
 const char* mqtt_broker = "broker.emqx.io";
 const int mqtt_port = 1883;
