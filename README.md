@@ -49,7 +49,7 @@ Edite no codigo:
 const char* ssid = "SeuWiFi";
 const char* password = "SuaSenha";
 const char* pc_mac = "AA:BB:CC:DD:EE:FF";
-const char* pc_ip = "192.168.1.100";
+const char* pc_ip = "192.168.1.101";
 ````
 ### Upload
 
