@@ -69,36 +69,57 @@ mosquitto_pub -h broker.emqx.io -t pc/command -m "status"
 
 # Reiniciar M5
 mosquitto_pub -h broker.emqx.io -t pc/command -m "reiniciar"
-Tópicos MQTT
+
+# Tópicos MQTT
+
 Tópico	Descrição
+
 pc/command	Enviar comandos
+
 pc/status	Receber status
-🖥️ Interface
+
+# 🖥️ Interface
 Tela Principal
-text
+
 ┌─────────────────────────────┐
-│ PC do DidoDR              │
+
+│ PC do DidoDR                │
+
 │ ─────────────────────────── │
-│ PC: LIGADO                  │
-│ IP: 192.168.1.200          │
-│ MAC: AA:BB:CC:DD:EE:FF    │
-│ WiFi: 192.168.1.100        │
-│ MQTT: OK                   │
+
+│ PC: LIGADO                    │
+
+│ IP: 192.168.1.200            │
+
+│ MAC: AA:BB:CC:DD:EE:FF      │
+
+│ WiFi: 192.168.1.100          │
+
+│ MQTT: OK                     │
+
 └─────────────────────────────┘
+
 Modo Relógio
-text
+
 ┌─────────────────────────────┐
+
 │ ●   14:30                   │
+
 │      19/07/2024             │
-│      PC: LIGADO             │            │
+
+│      PC: LIGADO             │ 
+
 └─────────────────────────────┘
-Indicadores
+
+Indicadores:
+
 🟢 Verde = MQTT Conectado
 
 🔴 Vermelho = MQTT Desconectado
 
-🔧 Configurando WoL no PC
+# 🔧 Configurando WoL no PC
 Windows
+
 Gerenciador de Dispositivos
 
 Placa de Rede → Propriedades
@@ -107,41 +128,43 @@ Gerenciamento de Energia
 
 Marque: "Permitir que este dispositivo desperte o computador"
 
-Linux
-bash
-sudo ethtool -s eth0 wol g
-Encontrar MAC do PC
-bash
 # Windows
 ipconfig /all
 
-# Linux/Mac
-ifconfig
-⚠️ Resolução de Problemas
+WiFi não conecta:
 
-WiFi não conecta
+
 Verifique SSID e senha
+
 Reinicie o roteador
 
-MQTT não conecta
+MQTT não conecta:
+
+
 Verifique se o broker está online
 
 Verifique firewall/porta 1883
 
-WoL não funciona
+WoL não funciona:
+
+
 Confirme MAC correto
 
 Verifique WoL ativado no PC
 
 PC e M5 na mesma rede
 
-📁 Estrutura do Código
-text
+# 📁 Estrutura do Código
+
 ├── m5stick_pc_remote.ino    # Código principal
+
 ├── README.md                 # Este arquivo
+
 └── LICENSE                   # Licença MIT
-🤝 Contribuição
-Fork o projeto
+
+# 🤝 Contribuição
+
+Fork o projeto:
 
 Crie sua branch (git checkout -b feature/nova)
 
@@ -157,7 +180,7 @@ MIT License - veja o arquivo LICENSE para detalhes.
 👨‍💻 Autor
 didodr
 
-https://img.shields.io/badge/GitHub-@seuusuario-181717?style=flat&logo=github
+https://img.shields.io/badge/GitHub-@didodr-181717?style=flat&logo=github
 
 ⭐ Apoie
 Se este projeto te ajudou, dê uma ⭐ no GitHub!
@@ -165,6 +188,7 @@ Se este projeto te ajudou, dê uma ⭐ no GitHub!
 Divirta-se! 🚀
 
 Links Úteis
+
 M5StickCPlus Docs
 
 Wake-on-LAN Guide
